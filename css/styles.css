@@ -4923,3 +4923,51 @@ input[type="button"].btn--primary:focus {
         margin-right: 1.4rem;
     }
 }
+@media only screen and (min-width: 1024px) {
+    .content {
+        flex: 1 1 45%;
+    }
+}
+ @media only screen and (max-width: 767px) and (orientation: portrait) {
+    .content-1 {
+        flex: 1 1 100%;
+    }
+}
+
+/* Styles for mobile devices in landscape mode to mimic PC view */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .content-1 {
+        flex: 1 1 45%;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .service-icon {
+        margin: 10px 0 0 0;
+    }
+    .service-text {
+        text-align: center;
+    }
+    .phone-image {
+        order: 2;
+        margin: 20px 0;
+    }
+    .testimonial-slider__author {
+        padding-left: 0;
+        margin-bottom: var(--vspace-0_5);
+        min-height: 0;
+        text-align: center;
+    }
+    .testimonial-slider__avatar {
+        display: inline-block !important;
+        margin: 0;
+        position: static;
+    }
+}
