@@ -4928,14 +4928,14 @@ input[type="button"].btn--primary:focus {
         flex: 1 1 45%;
     }
 }
- @media only screen and (max-width: 767px) and (orientation: portrait) {
+ @media only screen and (max-width: 850px) and (orientation: portrait) {
     .content-1 {
         flex: 1 1 100%;
     }
 }
 
 /* Styles for mobile devices in landscape mode to mimic PC view */
-@media only screen and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (max-width: 850px) and (orientation: landscape) {
     .content-1 {
         flex: 1 1 45%;
     }
